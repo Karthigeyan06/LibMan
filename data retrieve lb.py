@@ -1,0 +1,10 @@
+import sqlite3
+con=sqlite3.connect("library.db")
+cr=con.cursor()
+a=cr.execute("SELECT * FROM BOOKMG WHERE SNO='LB1001'")
+a=cr.fetchone()
+print("S.NO:",a[0])
+print("Title:", a[1])
+print("Author:", a[2])
+print("Quantity:", a[3])
+print("Journ")
